@@ -101,18 +101,19 @@ is dependant on the rotational speed of the disk.
 - <font color="#00b0f0">Revolutions Per Minute</font> (RPM)
 
 RPM is usually converted to Revolutions Per Second  
-Formula:  
-$$  
-\text{RPS} = \frac{\text{RPM}}{60}  
-$$  
+Formula:
+$$
+\text{RPS} = \frac{\text{RPM}}{60}
+$$
 
-$T_{R}$ (in seconds) Formula:  
-$$  
-\begin{gathered}  
-0.5 \div RPS \\  
-(\frac{1}{2} \times RPM) \div 60  
-\end{gathered}  
-$$  
+$T_{R}$ (in seconds) Formula:
+$$
+\begin{gathered}
+0.5 \div RPS \\
+(\frac{1}{2} \times RPM) \div 60
+\end{gathered}
+$$
+
 Example:  
 For a random sector, Average Rotational delay, T<sub>R</sub> = 0.5/RPS seconds -> (0.5 for half a revolution)
 
