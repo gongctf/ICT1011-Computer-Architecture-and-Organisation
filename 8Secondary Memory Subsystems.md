@@ -73,7 +73,7 @@ Data can be **striped** by cylinder
 - Reduces head movement
 - Higher transfer rate
 	![{8F35C9DC-2811-409C-B0FE-BE9D688E252D}](attachments/{8F35C9DC-2811-409C-B0FE-BE9D688E252D}.png)
-	- 4 Mbytes data block can be striped into $8\times 512$Kbytes
+	- 4 Mbytes data block can be striped into $8\times 512$ Kbytes
 	- Disk has 4 double sided platters
 	- -> 8 surfaces
 	- -> 8 tracks stored on the same location (can be read/write at the same time)
@@ -101,18 +101,18 @@ is dependant on the rotational speed of the disk.
 - <font color="#00b0f0">Revolutions Per Minute</font> (RPM)
 
 RPM is usually converted to Revolutions Per Second  
-Formula:
-$$
-\text{RPS} = \frac{\text{RPM}}{60}
-$$
+Formula:  
+$$  
+\text{RPS} = \frac{\text{RPM}}{60}  
+$$  
 
 $T_{R}$ (in seconds) Formula:  
-$$
-\begin{gathered}
-0.5 \div RPS \\
-(\frac{1}{2} \times RPM) \div 60
-\end{gathered}
-$$
+$$  
+\begin{gathered}  
+0.5 \div RPS \\  
+(\frac{1}{2} \times RPM) \div 60  
+\end{gathered}  
+$$  
 Example:  
 For a random sector, Average Rotational delay, T<sub>R</sub> = 0.5/RPS seconds -> (0.5 for half a revolution)
 
@@ -126,17 +126,17 @@ is dependant on
 - Number of bytes for the transfer (N)
 
 Transfer Time Formula:  
-$$
-T_{T} = \frac{N}{RPS\times D_{T}\times D_{S}}
-$$
+$$  
+T_{T} = \frac{N}{RPS\times D_{T}\times D_{S}}  
+$$  
 $D_{T}\times D_{S}$  = number of bytes on the track  
 Number of bytes / speed($\frac{\text{bytes}}{\text{second}}$) = Transfer Time
 
 ### Total Time
 Total average data block read/write time:  
-$$
-T_{total} = T_{S} + T_{R} + T_{T}
-$$
+$$  
+T_{total} = T_{S} + T_{R} + T_{T}  
+$$  
 Total time = Seek time + Rotational time + Transfer time
 
 Example:  
