@@ -101,12 +101,12 @@ is dependant on the rotational speed of the disk.
 - <font color="#00b0f0">Revolutions Per Minute</font> (RPM)
 
 RPM is usually converted to Revolutions Per Second  
-Formula:  
+Formula:\
 $$
 \text{RPS} = \frac{\text{RPM}}{60}
 $$
 
-$T_{R}$ (in seconds) Formula:  
+$T_{R}$ (in seconds) Formula:\
 $$
 \begin{gathered}
 0.5 \div RPS \\
@@ -126,15 +126,15 @@ is dependant on
 	- number of bytes per sector
 - Number of bytes for the transfer (N)
 
-Transfer Time Formula:  
+Transfer Time Formula:\
 $$
 T_{T} = \frac{N}{RPS\times D_{T}\times D_{S}}
 $$
-$D_{T}\times D_{S}$  = number of bytes on the track  
+$D_{T}\times D_{S}$ = number of bytes on the track  
 Number of bytes / speed($\frac{\text{bytes}}{\text{second}}$) = Transfer Time
 
 ### Total Time
-Total average data block read/write time:  
+Total average data block read/write time:\
 $$
 T_{total} = T_{S} + T_{R} + T_{T}
 $$
