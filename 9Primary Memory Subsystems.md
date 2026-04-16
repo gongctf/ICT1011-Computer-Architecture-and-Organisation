@@ -106,14 +106,14 @@ Access time + any additional time before another memory access can commence
 ### Transfer Rate
 - Rate at which data can be **transferred** in or out of a memory module
 
-RAM:
-$$
+RAM:  
+```math
 \frac{1}{\text{Memory Cycle Time}}
-$$
-Non-RAM (storage):
-$$
+```
+Non-RAM (storage):  
+```math
 TN=TA+\left( \frac{N}{R} \right)
-$$
+```
 - TN = Average time to read or write N bit
 - TA = Average Access time (preparation time)
 - N = number of bits (bits)

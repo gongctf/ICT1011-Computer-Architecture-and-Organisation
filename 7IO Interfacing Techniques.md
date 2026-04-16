@@ -303,9 +303,9 @@ Class 3:
 dBm (decimal-miliwatt) is a power ratio used to measure transmit power
 
 Formula for exchanging Power (watts) and Transmit Power (dBm):
-$$
+```math
 P_{W} = 10^{\frac{P_{dBm}-30}{10}}
-$$
+```
 where $P_{W}$ is watts and $P_{dBm}$ is transmit power in dBm
 
 ## Piconets & Scatternets

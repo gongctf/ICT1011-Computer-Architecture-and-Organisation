@@ -101,18 +101,18 @@ is dependant on the rotational speed of the disk.
 - <font color="#00b0f0">Revolutions Per Minute</font> (RPM)
 
 RPM is usually converted to Revolutions Per Second  
-Formula:\
-$$
+Formula:  
+```math
 \text{RPS} = \frac{\text{RPM}}{60}
-$$
+```
 
-$T_{R}$ (in seconds) Formula:\
-$$
+$T_{R}$ (in seconds) Formula:  
+```math
 \begin{gathered}
 0.5 \div RPS \\
 (\frac{1}{2} \times RPM) \div 60
 \end{gathered}
-$$
+```
 
 Example:  
 For a random sector, Average Rotational delay, T<sub>R</sub> = 0.5/RPS seconds -> (0.5 for half a revolution)
@@ -126,18 +126,18 @@ is dependant on
 	- number of bytes per sector
 - Number of bytes for the transfer (N)
 
-Transfer Time Formula:\
-$$
+Transfer Time Formula:  
+```math
 T_{T} = \frac{N}{RPS\times D_{T}\times D_{S}}
-$$
+```
 $D_{T}\times D_{S}$ = number of bytes on the track  
 Number of bytes / speed($\frac{\text{bytes}}{\text{second}}$) = Transfer Time
 
 ### Total Time
-Total average data block read/write time:\
-$$
+Total average data block read/write time:  
+```math
 T_{total} = T_{S} + T_{R} + T_{T}
-$$
+```
 Total time = Seek time + Rotational time + Transfer time
 
 Example:  
@@ -202,14 +202,14 @@ Mirroring and stripping (stripe of mirrors)
 - Fast read/write
 
 ## RAID 5 (block-level striping & distributed parity)
-![{02904F1C-450D-412F-9D3D-4AEB4CCAFFD1}](attachments/{02904F1C-450D-412F-9D3D-4AEB4CCAFFD1}.png)
-$$
+![{02904F1C-450D-412F-9D3D-4AEB4CCAFFD1}](attachments/{02904F1C-450D-412F-9D3D-4AEB4CCAFFD1}.png)  
+```math
 \begin{gathered}
 p_{1} = A \oplus B \\
 \text{If A fails: }A=P \oplus B \\
 \text{If B fails: }B = P \oplus A
 \end{gathered}
-$$
+```
 
 ## Comparison and applications
 ![{4913596A-28DA-4FDC-A5ED-A7802468D415}](attachments/{4913596A-28DA-4FDC-A5ED-A7802468D415}.png)
